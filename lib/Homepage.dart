@@ -32,7 +32,7 @@ class _HomepageState extends State<Homepage> {
     explore(),
     cart(),
     wishlist(),
-    profile(),
+    Profile(),
   ];
 
   final List<Widget> _menu =[
@@ -47,6 +47,7 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.cyan[800],
         centerTitle: true,
         title: Text('Automall'),
 
@@ -73,7 +74,7 @@ class _HomepageState extends State<Homepage> {
                 ),
                 onTap: (){
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => profile())
+                    MaterialPageRoute(builder: (context) => Profile())
                   );
                 },
               ),
@@ -170,7 +171,7 @@ class _HomepageState extends State<Homepage> {
               ),
 
               ListTile(
-                leading: Icon(Icons.person_outline_rounded),
+                //leading: Icon(Icons.person_outline_rounded),
                 title: Text(
                   'Change password',
                   style: TextStyle(fontSize: 20),
@@ -180,7 +181,7 @@ class _HomepageState extends State<Homepage> {
                 },
               ),
               ListTile(
-                leading: Icon(Icons.person_outline_rounded),
+                //leading: Icon(Icons.person_outline_rounded),
                 title: Text(
                   'Privacy policy',
                   style: TextStyle(fontSize: 20),
@@ -196,6 +197,9 @@ class _HomepageState extends State<Homepage> {
 
       body: _navigationBarPages[_selectIndex],
 
+
+
+      //Bottom navigation bar
 
       bottomNavigationBar: Container(
 
