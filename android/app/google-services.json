@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "163394069",
+    "project_id": "automall-ed1ea",
+    "storage_bucket": "automall-ed1ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163394069:android:fef0a473627f4fd74f541c",
+        "android_client_info": {
+          "package_name": "com.example.automall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163394069-voq67s9fglnnco1sl753rniq343pkpaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.automall",
+            "certificate_hash": "629a59cd774da80c381a597f3bfc33ead12e4a2e"
+          }
+        },
+        {
+          "client_id": "163394069-fljmr4oatigq016jvf6uifqeu1k9duvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGR1j1dltMs0kVHc1g8rpQ-hDNTi7b7yA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163394069-fljmr4oatigq016jvf6uifqeu1k9duvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
