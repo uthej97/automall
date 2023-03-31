@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:automall/Menu/myorders.dart';
 import 'package:automall/Menu/feedback.dart';
 import 'package:automall/Menu/help.dart';
-import 'package:automall/Menu/logout.dart';
+import 'package:automall/authentication/logout.dart';
 import 'package:automall/navigation bar pages/Home.dart';
 import 'package:automall/navigation bar pages/explore.dart';
 import 'package:automall/navigation bar pages/cart.dart';
@@ -47,6 +47,7 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         backgroundColor: Colors.cyan[800],
         centerTitle: true,
         title: Text('Automall'),

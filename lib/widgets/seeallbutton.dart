@@ -8,11 +8,14 @@ class SeeAllButton extends StatelessWidget {
     return Container(
       height: 24,
       width: 70,
-      child: FlatButton(
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20)
+      child: ElevatedButton(
+        style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.all(Colors.cyanAccent),
+            backgroundColor: MaterialStateProperty.all(Colors.white),
+            shape: MaterialStateProperty.all(RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ))
         ),
-        color: Colors.cyan[800],
         onPressed: () {},
         child: Row(
           children: [

@@ -1,35 +1,39 @@
 import 'package:flutter/material.dart';
-import 'package:automall/services/auth.dart';
+import 'package:automall/Services/auth.dart';
 
-class Login extends StatefulWidget {
+class SignUp extends StatefulWidget {
 
   final Function toggleView;
-  Login({this.toggleView});
+  SignUp({this.toggleView});
 
   @override
-  _LoginState createState() => _LoginState();
+  State<SignUp> createState() => _SignUpState();
+
+
 }
 
-class _LoginState extends State<Login> {
 
-  final AuthService _auth =AuthService();
+class _SignUpState extends State<SignUp> {
+
+  final AuthService _auth = AuthService();
 
   String email = '';
   String password = '';
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
 
       backgroundColor: Colors.lightBlue[100],
       appBar: AppBar(
         backgroundColor: Colors.blueAccent[400],
         elevation: 0.0,
-        title: Text('Sign in'),
+        title: Text('Sign up'),
         actions: [
           TextButton.icon(
             icon: Icon(Icons.person),
-            label: Text('Register'),
+            label: Text('Sign in'),
             onPressed: (){
               widget.toggleView();
             },
@@ -55,10 +59,10 @@ class _LoginState extends State<Login> {
                     }
                 ),
                 SizedBox(height: 20),
-
                 ElevatedButton(
+                  //color: Colors.blueGrey[600],
                   child: Text(
-                    'Sign in',
+                    'Register',
                     style: TextStyle(color: Colors.white),
                   ),
                   onPressed: () async{
